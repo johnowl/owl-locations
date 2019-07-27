@@ -1,0 +1,3 @@
+// create index
+db.getCollection('positions').createIndex( { location : "2dsphere" } );
+
