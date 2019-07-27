@@ -28,8 +28,6 @@ class PositionService {
     }
 
     fun getPositionsNear(latitude: Double, longitude: Double, maxDistanceInMeters: Double): List<Position> {
-        // yes, it's not beautiful =/
-        // I'm really sad for doing this... but I really tried a lot
         return positionRepository.findAllNear(latitude, longitude, maxDistanceInMeters)
     }
 }
