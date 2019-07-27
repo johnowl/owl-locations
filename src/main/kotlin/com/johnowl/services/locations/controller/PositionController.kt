@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
-@RestController
+@RestController("/positions")
 class PositionController {
 
     private val positionService: PositionService
