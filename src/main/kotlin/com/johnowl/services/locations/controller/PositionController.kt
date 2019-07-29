@@ -8,14 +8,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
 @RestController("/positions")
-class PositionController {
-
-    private val positionService: PositionService
-
-    @Autowired
-    constructor(service: PositionService) {
-        this.positionService = service
-    }
+class PositionController(private val positionService: PositionService) {
 
     @PostMapping("/")
     fun save(@RequestBody position: Position): ResponseEntity<Position> {

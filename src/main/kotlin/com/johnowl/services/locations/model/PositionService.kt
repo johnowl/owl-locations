@@ -1,19 +1,9 @@
 package com.johnowl.services.locations.model
 
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import java.math.BigDecimal
-import java.math.RoundingMode
 
 @Service
-class PositionService {
-
-    private val positionRepository: PositionRepository
-
-    @Autowired
-    constructor(positionRepository: PositionRepository) {
-        this.positionRepository = positionRepository
-    }
+class PositionService(private val positionRepository: PositionRepository) {
 
     fun save(position: Position): Position {
         return positionRepository.save(position)
