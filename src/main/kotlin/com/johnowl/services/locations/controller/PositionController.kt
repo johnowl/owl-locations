@@ -2,7 +2,6 @@ package com.johnowl.services.locations.controller
 
 import com.johnowl.services.locations.model.Position
 import com.johnowl.services.locations.model.PositionService
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
